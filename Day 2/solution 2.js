@@ -1,12 +1,6 @@
 const fs = require('fs')
 const input = fs.readFileSync('Day 2/input.txt', 'utf8').split('\n')
 
-const maxValues = {
-    red: 12,
-    green: 13,
-    blue: 14
-}
-
 function parseGame (game) {
     const id = Number(game.split(":")[0].split(" ")[1]) // split Game ID:
     
